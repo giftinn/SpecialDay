@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Spotify</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- PROFILE SELECT -->
+<div id="profileSelect" style="width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;background:linear-gradient(to bottom,#0f2027,#203a43,#2c5364);">
+<h1 style="margin-bottom:40px;">Who's listening?</h1>
+<div style="display:flex;gap:40px;">
+<div class="profile-card" onclick="selectProfile('Rafly Januar')">
+<img src="p.jpg">
+<p>Rafly Januar</p>
+</div>
+</div>
+</div>
+
+<!-- WELCOME -->
+<div id="welcomeScreen" class="hidden">
+<h1 id="welcomeText"></h1>
+<button onclick="enterAbout()" style="margin-top:20px;padding:12px 30px;border:none;border-radius:30px;background:#1DB954;cursor:pointer;font-weight:600;">
+Enter
+</button>
+</div>
+
+<!-- ABOUT PAGE -->
+<div id="aboutPage" class="hidden fade">
+  <div class="about-container">
+
+    <!-- LEFT FULL IMAGE CARD -->
+   <div class="about-left">
+
+  <div class="about-overlay"></div>
+
+  <!-- TITLE DI ATAS -->
+  <div class="about-top-title">About The Birthday Boy</div>
+
+  <!-- CONTENT DI BAWAH -->
+  <div class="about-content">
+    <div class="profile-name">
+      Rafly Januar Raharjo
+      <div class="verified">✓</div>
+    </div>
+
+    <div class="about-text">
+      A multi-talented soul known for being a true overachiever...
+    </div>
+
+    <button class="about-btn" onclick="goToLetter()">On Tour</button>
+  </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="about-right">
+
+      <!-- CREDIT CARD -->
+      <div class="credit-card">
+        <div class="credit-item">
+          <div class="credit-title">Release Date</div>
+          <div class="credit-value">January 10, 2026</div>
+        </div>
+
+        <div class="credit-item">
+          <div class="credit-title">Genre</div>
+          <div class="credit-value">Favorite Person</div>
+        </div>
+
+        <div class="credit-item">
+          <div class="credit-title">Duration</div>
+          <div class="credit-value">Forever & Always</div>
+        </div>
+
+        <div class="credit-item">
+          <div class="credit-title">Label</div>
+          <div class="credit-value">Nares Records</div>
+        </div>
+      </div>
+
+      <!-- TOUR CARD -->
+      <div class="tour-card">
+        <div>
+          <div class="tour-title">Rafly's Birthday Feast</div>
+          <div class="tour-sub">Somewhere Special in Malang</div>
+        </div>
+
+        <button class="tour-btn" onclick="goToLetter()">Get Ticket</button>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<section id="letterPage" class="page hidden">
+  <div class="letter-container">
+
+    <!-- LEFT SIDE LETTER -->
+    <div class="letter-left">
+      <h2>Happy Birthday, Love.</h2>
+      <div id="typingText" class="letter-text"></div>
+
+      <button class="playlist-btn" onclick="goToPlaylist()">
+        Get Your Playlist
+      </button>
+    </div>
+
+    <!-- RIGHT SIDE PHOTO GRID -->
+    <div class="letter-right">
+        <div class="photo-grid">
+            <img src="p.jpg">
+            <img src="p.jpg">
+            <img src="p.jpg">
+            <img src="p.jpg">
+            <img src="p.jpg">
+            <img src="p.jpg">
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="playlistPage" class="playlist-page page hidden">
+
+  <div class="playlist-header">
+    <img src="p.jpg" class="playlist-cover">
+    <h1 class="playlist-title">Let Me Love You</h1>
+    <p class="playlist-sub">12 Songs • Made for You</p>
+  </div>
+
+  <!-- SCROLLABLE LIST -->
+  <div class="song-list">
+
+    <div class="song-item" onclick="playSong(0)" data-src="1.mp3">
+      <div class="song-overlay"></div>
+      <span class="song-number">1</span>
+      <img src="p.jpg" class="song-img">
+      <div class="song-info">
+        <h4>Let Me Love You</h4>
+        <p>DJ Snake, Justin Bieber</p>
+      </div>
+    </div>
+
+    <div class="song-item" onclick="playSong(1)" data-src="2.mp3">
+      <div class="song-overlay"></div>
+      <span class="song-number">2</span>
+      <img src="p.jpg" class="song-img">
+      <div class="song-info">
+        <h4>Let Me Love You</h4>
+        <p>DJ Snake, Justin Bieber</p>
+      </div>
+    </div>
+
+    <div class="song-item" onclick="playSong(2)" data-src="1.mp3">
+      <span class="song-number">3</span>
+      <img src="p.jpg" class="song-img">
+      <div class="song-info">
+        <h4>Let Me Love You</h4>
+        <p>DJ Snake, Justin Bieber</p>
+      </div>
+    </div>
+
+    <div class="song-item" onclick="playSong(0)" data-src="songs/song1.mp3">
+      <span class="song-number">4</span>
+      <img src="p.jpg" class="song-img">
+      <div class="song-info">
+        <h4>Let Me Love You</h4>
+        <p>DJ Snake, Justin Bieber</p>
+      </div>
+    </div>
+
+    <div class="song-item" onclick="playSong(0)" data-src="songs/song1.mp3">
+      <span class="song-number">5</span>
+      <img src="p.jpg" class="song-img">
+      <div class="song-info">
+        <h4>Let Me Love You</h4>
+        <p>DJ Snake, Justin Bieber</p>
+      </div>
+    </div>
+
+    <div class="song-item" onclick="playSong(0)" data-src="songs/song1.mp3">
+      <span class="song-number">6</span>
+      <img src="song1.jpg" class="song-img">
+      <div class="song-info">
+        <h4>Let Me Love You</h4>
+        <p>DJ Snake, Justin Bieber</p>
+      </div>
+    </div>
+
+    <div class="song-item" onclick="playSong(0)" data-src="songs/song1.mp3">
+      <span class="song-number">7</span>
+      <img src="song1.jpg" class="song-img">
+      <div class="song-info">
+        <h4>Let Me Love You</h4>
+        <p>DJ Snake, Justin Bieber</p>
+      </div>
+    </div>
+
+    <div class="song-item" onclick="playSong(0)" data-src="songs/song1.mp3">
+      <span class="song-number">8</span>
+      <img src="song1.jpg" class="song-img">
+      <div class="song-info">
+        <h4>Let Me Love You</h4>
+        <p>DJ Snake, Justin Bieber</p>
+      </div>
+    </div>
+
+    <div class="song-item" onclick="playSong(0)" data-src="songs/song1.mp3">
+      <span class="song-number">9</span>
+      <img src="song1.jpg" class="song-img">
+      <div class="song-info">
+        <h4>Let Me Love You</h4>
+        <p>DJ Snake, Justin Bieber</p>
+      </div>
+    </div>
+
+    <div class="song-item" onclick="playSong(0)" data-src="songs/song1.mp3">
+      <span class="song-number">10</span>
+      <img src="song1.jpg" class="song-img">
+      <div class="song-info">
+        <h4>Let Me Love You</h4>
+        <p>DJ Snake, Justin Bieber</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- PLAYER TETAP DI BAWAH -->
+  <div class="music-player">
+    <div class="controls">
+      <button onclick="prevSong()">⏮</button>
+      <button onclick="togglePlay()" id="playPauseBtn">▶</button>
+      <button onclick="nextSong()">⏭</button>
+    </div>
+    <div class="time-wrapper">
+      <span id="currentTime">0:00</span>
+      <span id="totalDuration">0:00</span>
+    </div>
+
+  <input type="range" id="progressBar" value="0" min="0" max="100">
+  </div>
+
+</section>
+<audio id="audioPlayer"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
