@@ -64,7 +64,7 @@ Enter
       <div class="credit-card">
         <div class="credit-item">
           <div class="credit-title">Release Date</div>
-          <div class="credit-value">January 10, 2026</div>
+          <div class="credit-value">April 07, 2026</div>
         </div>
 
         <div class="credit-item">
@@ -133,6 +133,7 @@ Enter
     <img src="asset/3.jpg" class="playlist-cover">
     <h1 class="playlist-title">Out of My League</h1>
     <p class="playlist-sub">10 Songs • Made for You</p>
+    <button class="play-btn" onclick="goToFinal()"> Continue → </button>
   </div>
 
   <!-- SCROLLABLE LIST -->
@@ -246,6 +247,19 @@ Enter
   </div>
 
 </section>
+
+<section id="finalPage" class="page hidden final-page">
+
+  <div class="final-container">
+    <h3 id="finalTyping" class="final-text"></h3>
+
+    <button class="back-home-btn" onclick="backToHome()">
+      Back to Profile
+    </button>
+  </div>
+
+</section>
+  
 <audio id="audioPlayer"></audio>
 
 <script src="script.js"></script>
