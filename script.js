@@ -21,13 +21,22 @@ function goToLetter(){
   startTyping();
 }
 
-const text = `On your special day, I just want you to know how incredibly proud I am of the person you are...
+const text = `Today is all about you, but I can’t let it pass without saying thank you. Thank you for loving me the way you do. Thank you for your patience, your understanding, and for always choosing to stay even when I don’t always get things right. Having you in my life is something I never take for granted.
 
-I pray for your happiness, your health, and for you to be blessed with abundance in everything you do.
+On your birthday, I just want you to know how much you mean to me. I know I’m not perfect. I know there are moments when I get too caught up in things, when I could communicate better, when I could be more present. But please believe me when I say that none of that ever reflects how much I love you.
 
-I love you so damn much.
+You matter to me more than any busy schedule, more than any exhaustion, more than anything that tries to distract me from what’s important. And you are important. Always.
 
-xoxo, nares.`;
+I’m sorry for the times I’ve made you feel alone or unsure, even unintentionally. You deserve consistency, reassurance, and someone who pays attention to the little things that make you feel loved. I’m still learning, still growing — but I promise I’m trying, especially for us.
+
+On your birthday, my wish isn’t just for your success or happiness (even though I hope this year brings you everything you’ve been dreaming of). My wish is that you always feel secure with me. I hope you never doubt how deeply I care about you.
+
+I hope this year treats you gently. I hope your goals become real. I hope you feel proud of yourself. And I hope I get to stand beside you through every new chapter that’s coming.
+
+Thank you for staying. Thank you for believing in us. Thank you for being you. I love you more than I can ever fully explain.
+
+Happy sweet 17, my love. 🤍
+`;
 
 let i = 0;
 let typingStarted = false;
