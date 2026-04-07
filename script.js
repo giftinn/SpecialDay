@@ -21,21 +21,18 @@ function goToLetter(){
   startTyping();
 }
 
-const text = `Today is all about you, but I can’t let it pass without saying thank you. Thank you for loving me the way you do. Thank you for your patience, your understanding, and for always choosing to stay even when I don’t always get things right. Having you in my life is something I never take for granted.
+const text = `Today is all about you, your journey, your dreams, and everything that makes you who you are. I hope this year brings you closer to the life you’ve been quietly wishing for. I hope the things you’ve been working hard for finally start falling into place.
 
-On your birthday, I just want you to know how much you mean to me. I know I’m not perfect. I know there are moments when I get too caught up in things, when I could communicate better, when I could be more present. But please believe me when I say that none of that ever reflects how much I love you.
+I hope opportunities find you at the right time. I hope your efforts are rewarded. I hope every goal you set feels more reachable than ever before. And when things feel overwhelming, I hope you’re reminded of how capable and strong you truly are.
 
-You matter to me more than any busy schedule, more than any exhaustion, more than anything that tries to distract me from what’s important. And you are important. Always.
+I hope this year is gentle with you. I hope you wake up feeling excited about what’s ahead. I hope you find happiness in small, ordinary days. You deserve to see how amazing you are, not just on your birthday, but every single day.
 
-I’m sorry for the times I’ve made you feel alone or unsure, even unintentionally. You deserve consistency, reassurance, and someone who pays attention to the little things that make you feel loved. I’m still learning, still growing — but I promise I’m trying, especially for us.
+If there’s anything I wish for you, it’s peace. The kind of peace that makes your heart feel calm. I hope you laugh freely, sleep peacefully, and wake up feeling excited about your life. I hope stress fades quicker, and happiness stays longer. And on the days when things feel heavy, I hope you remember how strong and capable you truly are.
 
-On your birthday, my wish isn’t just for your success or happiness (even though I hope this year brings you everything you’ve been dreaming of). My wish is that you always feel secure with me. I hope you never doubt how deeply I care about you.
+Keep being soft. Keep being kind. Keep being you. The world is better because you’re in it.
 
-I hope this year treats you gently. I hope your goals become real. I hope you feel proud of yourself. And I hope I get to stand beside you through every new chapter that’s coming.
-
-Thank you for staying. Thank you for believing in us. Thank you for being you. I love you more than I can ever fully explain.
-
-Happy sweet 17, my love. 🤍
+Happy sweet 17, my pretty girl.
+May this year love you as much as you deserve. 🤍
 `;
 
 let i = 0;
