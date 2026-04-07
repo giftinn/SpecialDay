@@ -207,3 +207,41 @@ function playSong(index){
   selectedSong.classList.add("active");
 }
 
+function goToFinal(){
+  document.getElementById("playlistPage").classList.add("hidden");
+  document.getElementById("finalPage").classList.remove("hidden");
+
+  startFinalTyping();
+}
+
+function backToHome(){
+
+  // hide final page
+  document.getElementById("finalPage").classList.add("hidden");
+
+  // pastikan profileSelect tampil dan center lagi
+  const home = document.getElementById("profileSelect");
+  home.classList.remove("hidden");
+  home.style.display = "flex"; // supaya tetap center
+
+}
+
+function startFinalTyping(){
+
+  const text = "Thank you for being my favorite path in this life. Every song reminds me of you. 🤍";
+  const typingElement = document.getElementById("finalTyping");
+
+  typingElement.textContent = "";
+  let i = 0;
+
+  function typing(){
+    if(i < text.length){
+      typingElement.textContent += text.charAt(i);
+      i++;
+      setTimeout(typing, 40);
+    }
+  }
+
+  typing();
+}
+
