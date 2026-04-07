@@ -74,7 +74,7 @@ body{
   overflow:hidden;
   min-height:520px;
   padding:40px;
-  background:url('p.jpg') center/cover no-repeat;
+  background:url('asset/6.jpg') center/cover no-repeat;
 }
 
 .about-overlay{
@@ -243,7 +243,7 @@ body{
   opacity:0.9;
   min-height:200px;
   max-height:40vh;
-  overflow:hidden;
+  overflow-y:auto;
   white-space:pre-line;
 }
 
